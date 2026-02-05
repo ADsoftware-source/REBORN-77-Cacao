@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>REBORN 77 Cacao</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>REBORN 77 Cacao</h1>
+    <p>Bacanora sonorense · Tradición e innovación</p>
+</header>
+
+<nav>
+    <button onclick="mostrarSeccion('mision')">Misión</button>
+    <button onclick="mostrarSeccion('vision')">Visión</button>
+    <button onclick="mostrarSeccion('valores')">Valores</button>
+    <button onclick="mostrarSeccion('objetivo')">Objetivo</button>
+    <button onclick="mostrarSeccion('productos')">Productos</button>
+    <button onclick="mostrarSeccion('galeria')">Galería</button>
+    <button onclick="mostrarSeccion('contacto')">Contacto</button>
+</nav>
+
+<main>
+
+    <!-- MISIÓN -->
+    <section id="mision" class="contenido">
+        <h2>Misión</h2>
+        <p>
+            Preservar y compartir el alma de Sonora a través de la producción artesanal de bacanora de la más alta calidad.
+            Combinamos técnicas ancestrales con estándares modernos para ofrecer una experiencia destilada auténtica que
+            rinda homenaje a nuestras raíces y conquiste paladares a nivel internacional.
+        </p>
+    </section>
+
+    <!-- VISIÓN -->
+    <section id="vision" class="contenido oculto">
+        <h2>Visión</h2>
+        <p>
+            Consolidarnos como la marca referente de bacanora premium en el mundo, siendo reconocidos por nuestra excelencia
+            en el proceso de destilación y por nuestra capacidad de innovar en la industria de los espirituosos,
+            manteniendo siempre el respeto por la denominación de origen y la tradición sonorense.
+        </p>
+    </section>
+
+    <!-- VALORES -->
+    <section id="valores" class="contenido oculto">
+        <h2>Valores</h2>
+        <p>En cada trago están grabados nuestros valores:</p>
+        <ul>
+            <li><strong>Tradición:</strong> Respeto por más de 300 años de historia.</li>
+            <li><strong>Excelencia:</strong> Compromiso con los más altos estándares.</li>
+            <li><strong>Sabor:</strong> Esencia del agave Pacífica y la sierra sonorense.</li>
+            <li><strong>Calidad:</strong> Rigor en higiene y materias primas.</li>
+            <li><strong>Autenticidad:</strong> Orgullo por el origen y la denominación.</li>
+        </ul>
+        <button onclick="mensajeBacanora()">Nuestra esencia</button>
+    </section>
+
+    <!-- OBJETIVO -->
+    <section id="objetivo" class="contenido oculto">
+        <h2>Objetivo</h2>
+        <p>
+            Ofrecer una experiencia sensorial premium que conecte al consumidor con la herencia cultural del bacanora,
+            fusionando tradición y modernidad para posicionarnos en mercados nacionales e internacionales.
+        </p>
+    </section>
+
+    <!-- PRODUCTOS -->
+ <section id="productos" class="contenido oculto">
+    <h2>Productos</h2>
+
+    <div class="productos-grid">
+
+        <div class="producto">
+    <img src="imagenes/imagen2.png" alt="Piña Colada">
+    <h3>Piña Colada</h3>
+    <p>
+        Una mezcla fresca y tropical que combina notas de piña y coco con la suavidad
+        de la crema y el carácter de la bacanora. Su sabor es ligero, dulce y refrescante,
+        perfecta para tomarse bien fría, con hielo o como base para cocteles innovadores.
+    </p>
+    <p class="detalle-botella">
+        <strong>Ideal para:</strong> reuniones, coctelería, postres y regalos.
+    </p>
+    <span>$490</span>
+        <button type="button" onclick="agregarCarrito(event, 'Piña Colada', 490)">
+            Agregar al carrito
+        </button>
+    </div>
+
+
+        <div class="producto">
+            <img src="imagenes/imagen3.png" alt="Mocha">
+            <h3>Mocha</h3>
+            <p>
+                Una versión intensa y sofisticada que fusiona notas de café y cacao con
+                una base cremosa y balanceada. Su perfil profundo y cálido la convierte 
+                en una excelente opción para quienes disfrutan sabores robustos y elegantes.
+            </p>
+            <p class="detalle-botella">
+                <strong>Ideal para:</strong> after dinner, maridaje con postres, cocteles y consumo nocturno.
+            </p>
+            <span>$490</span>
+            <button type="button" onclick="agregarCarrito(event, 'Mocha', 490)">
+                Agregar al carrito
+            </button>
+        </div>
+
+        <div class="producto estrella">
+            <img src="imagenes/imagen1.png" alt="Cacao">
+            <h3>Cacao (Producto Estrella)</h3>
+            <p>
+                Una crema suave y envolvente que fusiona el carácter del bacanora sonorense 
+                con intensas notas de cacao mexicano. Su sabor es equilibrado, cremoso y 
+                ligeramente dulce, ideal para disfrutarse bien fría, con hielo o como base para 
+                cocteles y postres gourmet.
+            </p>
+            <p class="detalle-botella">
+                <strong>Ideal para:</strong>reuniones especiales, coctelería, digestivo, postres y regalos.
+            </p>
+            <span>$390</span>
+            <button type="button" onclick="agregarCarrito(event, 'Cacao (Producto Estrella)', 390)">
+                Agregar al carrito
+            </button>
+        </div>
+
+        <div class="producto">
+            <img src="imagenes/imagen4.png" alt="Crema de Nuez">
+            <h3>Crema de Nuez</h3>
+            <p>
+                Una crema suave y envolvente que fusiona el carácter de la bacanora sonorense 
+                con delicadas notas de nuez. Su sabor es equilibrado, cremoso y ligeramente dulce, 
+                ideal para disfrutarse bien fría, con hielo o como base para cocteles y postres 
+                gourmet.
+            </p>
+            <p class="detalle-botella">
+                <strong>Ideal para:</strong> reuniones especiales, coctelería, digestivo, postres y regalos.
+            </p>
+            <span>$490</span>
+            <button type="button" onclick="agregarCarrito(event, 'Crema de Nuez', 490)">
+                Agregar al carrito
+            </button>
+        </div>
+
+    </div>
+</section>
+
+
+</section>
+
+
+</main>
+
+<!-- CARRITO -->
+<div id="carrito">
+    <h3>🛒 Carrito</h3>
+
+    <ul id="listaCarrito"></ul>
+
+    <p><strong>Total: $<span id="total">0</span></strong></p>
+
+    <label for="pago">Forma de pago:</label>
+    <select id="pago">
+        <option value="">Selecciona</option>
+        <option value="Efectivo">Efectivo</option>
+        <option value="Tarjeta">Tarjeta</option>
+        <option value="Transferencia">Transferencia</option>
+    </select>
+
+    <button onclick="vaciarCarrito()">Vaciar carrito</button>
+    <button onclick="pagar()">Pagar</button>
+</div>
+
+<!-- TICKET -->
+<div id="ticket" class="oculto">
+    <h3>🧾 Ticket de compra</h3>
+
+    <p id="fecha"></p>
+
+    <ul id="ticketProductos"></ul>
+
+    <p><strong>Total pagado: $<span id="ticketTotal"></span></strong></p>
+    <p><strong>Método de pago:</strong> <span id="ticketPago"></span></p>
+
+    <!-- DATOS TRANSFERENCIA -->
+    <p id="datosTransferencia" class="oculto">
+        <strong>Datos para transferencia:</strong><br>
+        Banco: BBVA<br>
+        Cuenta / CLABE: 012180015444958048<br>
+        Titular: Samanta Solares Acevedo
+    </p>
+
+    <button onclick="cerrarTicket()">Cerrar</button>
+</div>
+
+<!-- GALERIA -->
+
+<section id="galeria" class="contenido oculto">
+    <h2>Galería</h2>
+
+    <p>Un recorrido visual por la esencia de REBORN 77 Cacao.</p>
+
+    <!-- CARRUSEL -->
+    <div class="carrusel">
+        <button class="carrusel-btn izquierda" onclick="moverCarrusel(-1)">&#10094;</button>
+
+        <div class="carrusel-viewport">
+            <div class="carrusel-contenedor" id="carrusel">
+                <div class="carrusel-item"><img src="imagenes/Galeria1.png"></div>
+                <div class="carrusel-item"><img src="imagenes/Galeria2.png"></div>
+                <div class="carrusel-item"><img src="imagenes/Galeria3.png"></div>
+                <div class="carrusel-item"><img src="imagenes/Galeria4.png"></div>
+                <div class="carrusel-item"><img src="imagenes/Galeria5.png"></div>
+            </div>
+        </div>
+
+        <button class="carrusel-btn derecha" onclick="moverCarrusel(1)">&#10095;</button>
+    </div>
+
+    <!-- GALERÍA DE PRODUCTOS -->
+    <hr class="separador">
+
+    <h2 class="subtitulo-galeria">Galería de Productos</h2>
+
+    <div class="galeria-productos">
+        <div class="card-producto">
+            <img src="imagenes/imagen2.png">
+            <h3>Piña Colada</h3>
+        </div>
+
+        <div class="card-producto">
+            <img src="imagenes/imagen3.png">
+            <h3>Mocha</h3>
+        </div>
+
+        <div class="card-producto estrella">
+            <img src="imagenes/imagen1.png">
+            <h3>Cacao</h3>
+        </div>
+
+        <div class="card-producto">
+            <img src="imagenes/imagen4.png">
+            <h3>Crema de Nuez</h3>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section id="contacto" class="contenido oculto">
+    <h2>Contacto</h2>
+
+    <p class="texto-contacto">
+        ¿Tienes dudas, pedidos especiales o deseas distribuir nuestros productos?
+        Escríbenos y con gusto te atenderemos.
+    </p>
+
+    <div class="contacto-grid">
+
+        <!-- INFO -->
+        <div class="info-contacto">
+            <p><strong>📍 Ubicación:</strong>Av. 5 de Mayo Manzana 018, Tecamac, 55740 Tecámac de Felipe Villanueva, Méx.</p>
+            <p><strong>📞 Teléfono:</strong> +52 644 564 2486</p>
+            <p><strong>📧 Email:</strong> reborn77cacao@gmail.com</p>
+            <p><strong>🕒 Horario:</strong> Lun – Vie | 9:00 – 18:00</p>
+            <!-- REDES SOCIALES -->
+            <div class="redes-sociales">
+            <h3>Síguenos en redes sociales</h3>
+
+            <a href="https://www.facebook.com/share/1F8wcK6D51/" target="_blank">📘 Facebook</a>
+            <a href="https://www.instagram.com/reborn_77.0?igsh=MXNiNTVuMGhramUwaw==" target="_blank">📸 Instagram</a>
+            <a href="https://www.tiktok.com/@reborn_77.0?_r=1&_t=ZS-93g0UHEBSZl" target="_blank">🎵 TikTok</a>
+        </div>
+        </div>
+        <!-- FORMULARIO -->
+        <form class="form-contacto" onsubmit="enviarContacto(event)">
+            <input type="text" id="nombre" placeholder="Nombre completo">
+            <input type="email" id="email" placeholder="Correo electrónico">
+            <textarea id="mensaje" placeholder="Escribe tu mensaje"></textarea>
+
+            <button type="submit">Enviar mensaje</button>
+        </form>
+
+    </div>
+</section>
+
+
+<footer>
+    <p>© 2026 REBORN 77 Cacao</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
